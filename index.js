@@ -102,8 +102,9 @@ function temperatureInF(temp, unit) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(idIn, nameIn, emailIn) {
+  let personArray = {id: idIn, name: nameIn, email: emailIn};
+  return personArray;
 }
 
 /**
