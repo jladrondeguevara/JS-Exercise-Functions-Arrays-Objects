@@ -120,8 +120,8 @@ function makePersonObject(idIn, nameIn, emailIn) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+function getName(personArray) {
+  return "Hello, my name is " + personArray.name;
 }
 
 
@@ -140,8 +140,13 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(fruitArray) {
+  for(let i = 0; i < fruitArray.length; i++)
+  {
+    if (fruitArray[i] == 'apple') {
+      return i;
+    }
+  }
 }
 
 /**
